@@ -16,7 +16,7 @@ settings:
 
 monitors:
   - id: workers-cloudflare-com # unique identifier
-    name: workers.cloudflare.com
+    name: cloudflare workers
     description: 'You write code. They handle the rest.' # default=empty
     url: 'https://workers.cloudflare.com/' # URL to fetch
     method: GET # default=GET
@@ -37,3 +37,27 @@ monitors:
     url: 'https://blog.cloudflare.com/'
     method: GET
     expectStatus: 200
+
+  - id: haonewa-blog
+    name: haonewa's Blog
+    description: 'haonewa's Blog.'
+    url: 'https://haonewa.tk'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+  - id: haonewa-alist
+    name: haonewa's Webdrive
+    description: 'haonewa's online drive service.'
+    url: 'https://pan.haonewa.tk'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
+
+    - id: mdc
+    name: MDC Main Site
+    description: 'Online Service Of MDC Server.'
+    url: 'https://hlight.tk'
+    method: GET
+    expectStatus: 200
+    linkable: true # allows the title to be a link, default=true
